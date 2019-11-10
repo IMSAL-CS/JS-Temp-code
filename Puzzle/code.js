@@ -21,9 +21,9 @@ function generate_puzzle_html(puzzle){
         let row_html = "<tr>"
         for(let j = 0; j < puzzle[i].length; j++){
             if(puzzle[i][j] == 0){
-                row_html += "<td onclick=\"square_click_handler(this)\">" + puzzle[i][j] + "</td>";
-            }else{
                 row_html += "<td>"+puzzle[i][j]+"</td>";
+            }else{
+                row_html += "<td onclick=\"square_click_handler(this)\">" + puzzle[i][j] + "</td>";
             }
         }
         row_html += "</tr>";
